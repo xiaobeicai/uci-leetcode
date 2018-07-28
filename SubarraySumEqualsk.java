@@ -12,6 +12,7 @@ The length of the array is in range [1, 20,000].
 The range of numbers in the array is [-1000, 1000] and the range of the integer k is [-1e7, 1e7].
  */
 public class SubarraySumEqualsk {
+	//
 	public int subarraySum(int[] nums, int k) {
 		int count = 0, sum = 0;
         Map<Integer,Integer> map = new HashMap<Integer,Integer>();//sum,count
@@ -24,7 +25,7 @@ public class SubarraySumEqualsk {
         }
         return count;
     }
-	
+	//T～N2
 	public int subarraySum2(int[] nums, int k) {
 		int count = 0;
         for(int start = 0;start < nums.length;start++) {
